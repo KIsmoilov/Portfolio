@@ -22,15 +22,52 @@ body {
   line-height: 28px;
   align-items: center;
   color: #28353f;
+  margin-top: 25px;
+  margin-bottom: 0;
+  padding-bottom: 0;
   padding: 1.5rem;
 }
 
 .nav-bar {
   display: flex;
   justify-content: space-between;
+  list-style: none;
 }
 
 .menu {
   width: 24px;
   height: 24px;
+}
+
+.hero {
+  background-image: url(/images/background.svg);
+  background-size: contain;
+  height: 726px;
+  background-repeat: no-repeat;
+}
+
+.intro {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  font-size: bold;
+  margin: 2rem;
+  color: #172b4d;
+}
+
+.intro :last-child {
+  color: rgb(0, 170, 117);
+}
+
+.text {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #172b4d;
+  width: 327px;
+  height: 164px;
+  margin: 24px;
 }
