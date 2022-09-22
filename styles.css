@@ -1,8 +1,8 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -17,13 +17,13 @@ body {
 }
 
 .nav-container {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
   align-items: center;
   color: #28353f;
-  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
   margin-bottom: 0;
+  margin-top: 25px;
   padding-bottom: 0;
   padding: 1.5rem;
 }
@@ -35,25 +35,30 @@ body {
 }
 
 .menu {
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 .hero {
   background-image: url(/images/background.svg);
+  background-repeat: no-repeat;
   background-size: contain;
   height: 726px;
-  background-repeat: no-repeat;
 }
 
 .intro {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  font-size: bold;
-  margin: 2rem;
   color: #172b4d;
+  margin: 0 2rem;
+  padding-top: 3.5rem;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
 }
 
 .intro :last-child {
@@ -61,13 +66,35 @@ body {
 }
 
 .text {
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
   color: #172b4d;
-  width: 327px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
   height: 164px;
+  line-height: 28px;
   margin: 24px;
+  text-align: center;
+  width: 327px;
+}
+
+.social {
+  margin: 6rem 5rem 3rem 5rem;
+}
+
+.social-list {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.scroll {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    width: 414px;
+  }
 }
