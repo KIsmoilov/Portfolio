@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background: #ffffff;
+  max-width: 100%;
+  width: 375px;
+}
+
+.nav-container {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  align-items: center;
+  color: #28353f;
+  padding: 1.5rem;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  width: 24px;
+  height: 24px;
+}
