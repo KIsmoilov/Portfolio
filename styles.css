@@ -200,7 +200,7 @@ h2 {
 
 .resume h2 {
   position: absolute;
-  right: 20px;
+  padding-left: 40px;
   width: 327px;
   font-style: normal;
   font-weight: 700;
