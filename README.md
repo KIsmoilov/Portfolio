@@ -1,6 +1,6 @@
-# Portfolio: setup and mobile first
+# Portfolio: finish mobile version
 
-> This is the first Protfolio project. The main tasks are setting up a repository and creating the first page of the mobile version of the project using HTML and CSS.
+> This is the first Protfolio project. The main tasks are setting up a repository and creating the first page, work section and "About me" section of the mobile version of the project using HTML and CSS.
 
 ## Built With
 
