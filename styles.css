@@ -191,6 +191,15 @@ h2 {
   color: #fff;
   border-style: none;
   letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.btn:active {
+  background: #008552;
 }
 
 .resume {
