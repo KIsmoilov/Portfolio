@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-setup-and-mobile-first",
+  "version": "1.0.0",
+  "description": "> This is the first Protfolio project. The main tasks are setting up a repository and creating the first page, work section and \"About me\" section of the mobile version of the project using HTML and CSS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KIsmoilov/Portfolio-setup-and-mobile-first.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KIsmoilov/Portfolio-setup-and-mobile-first/issues"
+  },
+  "homepage": "https://github.com/KIsmoilov/Portfolio-setup-and-mobile-first#readme",
+  "devDependencies": {
+    "hint": "^7.1.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}
