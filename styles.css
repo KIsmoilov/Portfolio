@@ -318,6 +318,38 @@ h2 {
   width: 327px;
 }
 
+#name, #email {
+  width: 327px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091E42;
+  padding: 15px 16px 15px 16px;
+}
+
+#textarea {
+  width: 327px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  height: 114px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091E42;
+  padding: 12px;
+}
+
+.form li{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 24px;
+}
+
 @media screen and (max-width: 500px) {
   body {
     width: 414px;
