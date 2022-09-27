@@ -302,6 +302,22 @@ h2 {
   padding: 12px;
 }
 
+.chat {
+  display: flex;
+  justify-content: center;
+  margin: 55px auto;
+}
+
+.chat h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  width: 327px;
+}
+
 @media screen and (max-width: 500px) {
   body {
     width: 414px;
