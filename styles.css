@@ -318,7 +318,8 @@ h2 {
   width: 327px;
 }
 
-#name, #email {
+#name,
+#email {
   width: 327px;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
@@ -326,7 +327,7 @@ h2 {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #091E42;
+  color: #091e42;
   padding: 15px 16px 15px 16px;
 }
 
@@ -339,15 +340,34 @@ h2 {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #091E42;
+  color: #091e42;
   padding: 12px;
 }
 
-.form li{
+.form li {
   display: flex;
   justify-content: center;
   list-style: none;
   margin: 24px;
+}
+
+#social-form {
+  margin-top: 50px;
+  margin-bottom: 17px;
+}
+
+.my-email {
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+  text-decoration: none;
+  padding-bottom: 150px;
+  margin-bottom: 147px;
 }
 
 @media screen and (max-width: 500px) {
