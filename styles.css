@@ -207,7 +207,8 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(/images/illustration-1.svg),
+  background-image:
+    url(/images/illustration-1.svg),
     url(/images/illustration-2.svg);
   background-position: 100% 4%, 0% 97%;
   background-repeat: no-repeat;
