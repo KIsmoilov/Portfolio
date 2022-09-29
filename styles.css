@@ -98,8 +98,13 @@ h2 {
   line-height: 5.2rem;
 }
 
+.intro :last-child:hover {
+  color: #172b4d;
+}
+
 .intro :last-child {
   color: rgb(0, 170, 117);
+  transition: 3s;
 }
 
 .text {
