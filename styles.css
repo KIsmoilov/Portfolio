@@ -131,6 +131,12 @@ h2 {
   justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+  .text {
+    max-width: 92rem;
+  }
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -311,6 +317,18 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
+  .resume {
+    background-image: url(/images/illustration-1-desktop.svg),
+      url(/images/illustration-2-desktop.svg);
+    background-position: 100% -100%, 0% 85%;
+    margin-top: 13rem;
+  }
+
+  .resume p {
+    max-width: 92rem;
+    padding: 0 7rem;
+  }
+
   .skills-1,
   .skills-2,
   .skills-3 {
@@ -400,10 +418,47 @@ h2 {
   padding: 1.2rem;
 }
 
-footer {
+.footer-page {
+  display: grid;
+  grid-template-columns: 1fr;
   background-image: url(/images/illustration-contact-form.svg);
   background-position: 100% 78%;
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .chat {
+    flex-direction: column;
+  }
+
+  main {
+    background-image: url(/images/illustration-1-contact-form-desktop.svg),
+      url(/images/illustration-2-contact-form-desktop.svg),
+      url(/images/contact-form-illustratoin-3-desktop.svg);
+    background-position: 0% 100%, 20% 97%, 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .footer-page {
+    grid-template-columns: 2fr 3fr;
+    column-gap: 2.4rem;
+    background-image: none;
+    margin: auto 13.5rem auto 13.5rem;
+  }
+
+  #name,
+  #email,
+  #textarea {
+    width: 100%;
+  }
+
+  .chat {
+    margin: 0;
+  }
+
+  .chat h2 {
+    width: 100%;
+  }
 }
 
 .form li {
@@ -430,4 +485,30 @@ footer {
   text-decoration: none;
   padding-bottom: 15rem;
   margin-bottom: 14.7rem;
+}
+
+@media screen and (min-width: 768px) {
+  form {
+    margin-bottom: 22.5rem;
+  }
+
+  .form li {
+    margin: 2.4rem 0;
+    justify-content: start;
+  }
+
+  .my-email {
+    display: none;
+  }
+
+  .footer-border {
+    background: #dfe1e6;
+    width: auto;
+    height: 0.2rem;
+    margin: 0;
+  }
+
+  #social-form {
+    margin: 2.7rem;
+  }
 }
