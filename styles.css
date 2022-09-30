@@ -63,7 +63,7 @@ body {
 }
 
 .hero {
-  background-image: url(/images/background.svg);
+  background-image: url(./images/background.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -79,7 +79,7 @@ body {
   }
 
   body {
-    background-image: url(/images/background-desktop.svg);
+    background-image: url(./images/background-desktop.svg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
@@ -290,8 +290,8 @@ h2 {
   align-content: space-between;
   align-items: center;
   background-image:
-    url(/images/illustration-1.svg),
-    url(/images/illustration-2.svg);
+    url(./images/illustration-1.svg),
+    url(./images/illustration-2.svg);
   background-position: 100% 4%, 0% 97%;
   background-repeat: no-repeat;
   margin-top: 5rem;
@@ -428,7 +428,7 @@ h2 {
 }
 
 footer {
-  background-image: url(/images/illustration-contact-form.svg);
+  background-image: url(./images/illustration-contact-form.svg);
   background-position: 100% 78%;
   background-repeat: no-repeat;
 }
