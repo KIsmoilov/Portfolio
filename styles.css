@@ -44,12 +44,14 @@ body {
   .nav-bar {
     display: none;
   }
+
   #nav-hidden {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
   }
+
   .nav__list a,
   li {
     list-style: none;
@@ -75,6 +77,7 @@ body {
   .hero {
     background-image: none;
   }
+
   body {
     background-image: url(/images/background-desktop.svg);
     background-repeat: no-repeat;
@@ -134,6 +137,11 @@ h2 {
 @media screen and (min-width: 768px) {
   .text {
     max-width: 92rem;
+    padding: 0 2rem;
+  }
+
+  .social {
+    margin: 3rem 8rem 7rem 8rem;
   }
 }
 
@@ -148,7 +156,7 @@ h2 {
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2.4rem;
-    margin: auto 13.5rem auto 13.5rem;
+    margin: auto 5% auto 5%;
   }
 }
 
@@ -196,7 +204,16 @@ h2 {
   .work-4,
   .work-5,
   .work-6 {
-    width: 100%;
+    width: 90%;
+  }
+
+  .work h2 {
+    width: 44.7rem;
+    margin: 25rem auto 5.2rem auto;
+  }
+
+  .indicator {
+    display: none;
   }
 }
 
@@ -241,6 +258,13 @@ h2 {
   padding: 0.8rem 1.2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .prog-lan {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .btn {
   width: auto;
   padding: 1rem;
@@ -269,7 +293,8 @@ h2 {
   flex-direction: column;
   align-content: space-between;
   align-items: center;
-  background-image: url(/images/illustration-1.svg),
+  background-image:
+    url(/images/illustration-1.svg),
     url(/images/illustration-2.svg);
   background-position: 100% 4%, 0% 97%;
   background-repeat: no-repeat;
@@ -318,10 +343,12 @@ h2 {
 
 @media screen and (min-width: 768px) {
   .resume {
-    background-image: url(/images/illustration-1-desktop.svg),
+    background-image:
+      url(/images/illustration-1-desktop.svg),
       url(/images/illustration-2-desktop.svg);
-    background-position: 100% -100%, 0% 85%;
+    background-position: 100% -50%, 0% 85%;
     margin-top: 13rem;
+    margin-bottom: 5.2rem;
   }
 
   .resume p {
@@ -332,12 +359,12 @@ h2 {
   .skills-1,
   .skills-2,
   .skills-3 {
-    width: 100%;
+    width: 90%;
   }
 }
 
 .skills-1 {
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 
 .icon {
@@ -416,6 +443,7 @@ h2 {
   line-height: 2.4rem;
   color: #091e42;
   padding: 1.2rem;
+  resize: none;
 }
 
 .footer-page {
@@ -432,7 +460,8 @@ h2 {
   }
 
   main {
-    background-image: url(/images/illustration-1-contact-form-desktop.svg),
+    background-image:
+      url(/images/illustration-1-contact-form-desktop.svg),
       url(/images/illustration-2-contact-form-desktop.svg),
       url(/images/contact-form-illustratoin-3-desktop.svg);
     background-position: 0% 100%, 20% 97%, 100% 100%;
@@ -443,7 +472,7 @@ h2 {
     grid-template-columns: 2fr 3fr;
     column-gap: 2.4rem;
     background-image: none;
-    margin: auto 13.5rem auto 13.5rem;
+    margin: 16.4rem 6.5% auto 6.5%;
   }
 
   #name,
@@ -453,10 +482,12 @@ h2 {
   }
 
   .chat {
-    margin: 0;
+    justify-content: start;
+    margin: 3rem auto;
   }
 
   .chat h2 {
+    font-size: 3rem;
     width: 100%;
   }
 }
