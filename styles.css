@@ -103,6 +103,11 @@ h2 {
 
 .intro :last-child {
   color: rgb(0, 170, 117);
+  transition: 3s;
+}
+
+.intro :last-child:hover {
+  color: #172b4d;
 }
 
 .text {
@@ -127,6 +132,18 @@ h2 {
   gap: 2.4rem;
   list-style: none;
   align-items: baseline;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-bottom: 50%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
 }
 
 .scroll {
@@ -179,6 +196,12 @@ h2 {
   width: 4.8rem;
   height: 0.4rem;
   margin: 0 auto 6rem auto;
+  transition: width 2s, height 2s;
+}
+
+.indicator:hover {
+  width: 20rem;
+  height: 1rem;
 }
 
 .work-1,
