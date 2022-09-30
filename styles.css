@@ -457,6 +457,8 @@ h2 {
 @media screen and (min-width: 768px) {
   .chat {
     flex-direction: column;
+    justify-content: start;
+    margin: 3rem auto;
   }
 
   main {
@@ -479,11 +481,6 @@ h2 {
   #email,
   #textarea {
     width: 100%;
-  }
-
-  .chat {
-    justify-content: start;
-    margin: 3rem auto;
   }
 
   .chat h2 {
