@@ -427,7 +427,7 @@ h2 {
   padding: 1.2rem;
 }
 
-footer {
+.footer-page {
   background-image: url(./images/illustration-contact-form.svg);
   background-position: 100% 78%;
   background-repeat: no-repeat;
