@@ -431,6 +431,8 @@ h2 {
   background-image: url(./images/illustration-contact-form.svg);
   background-position: 100% 78%;
   background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .form li {
