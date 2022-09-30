@@ -63,7 +63,7 @@ body {
 }
 
 .hero {
-  background-image: url(/images/background.svg);
+  background-image: url(./images/background.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -79,7 +79,7 @@ body {
   }
 
   body {
-    background-image: url(/images/background-desktop.svg);
+    background-image: url(./images/background-desktop.svg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
@@ -294,8 +294,8 @@ h2 {
   align-content: space-between;
   align-items: center;
   background-image:
-    url(/images/illustration-1.svg),
-    url(/images/illustration-2.svg);
+    url(./images/illustration-1.svg),
+    url(./images/illustration-2.svg);
   background-position: 100% 4%, 0% 97%;
   background-repeat: no-repeat;
   margin-top: 5rem;
@@ -344,8 +344,8 @@ h2 {
 @media screen and (min-width: 768px) {
   .resume {
     background-image:
-      url(/images/illustration-1-desktop.svg),
-      url(/images/illustration-2-desktop.svg);
+      url(./images/illustration-1-desktop.svg),
+      url(./images/illustration-2-desktop.svg);
     background-position: 100% -50%, 0% 85%;
     margin-top: 13rem;
     margin-bottom: 5.2rem;
@@ -449,7 +449,7 @@ h2 {
 .footer-page {
   display: grid;
   grid-template-columns: 1fr;
-  background-image: url(/images/illustration-contact-form.svg);
+  background-image: url(./images/illustration-contact-form.svg);
   background-position: 100% 78%;
   background-repeat: no-repeat;
 }
@@ -463,9 +463,9 @@ h2 {
 
   main {
     background-image:
-      url(/images/illustration-1-contact-form-desktop.svg),
-      url(/images/illustration-2-contact-form-desktop.svg),
-      url(/images/contact-form-illustratoin-3-desktop.svg);
+      url(./images/illustration-1-contact-form-desktop.svg),
+      url(./images/illustration-2-contact-form-desktop.svg),
+      url(./images/contact-form-illustratoin-3-desktop.svg);
     background-position: 0% 100%, 20% 97%, 100% 100%;
     background-repeat: no-repeat;
   }
