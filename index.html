@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header>
@@ -22,10 +22,21 @@
             <a href="#"><img src="images/Icon-Menu.svg" alt="Menu" /></a>
           </li>
         </ul>
+        <ul id="nav-hidden" class="nav__list">
+          <li>
+            <a href="#Portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#about-me">About</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
-      <section class="hero">
+      <section id="Portfolio" class="hero">
         <div class="intro">
           <h1>Hey there. I'm Khusniddin</h1>
           <h2>I'm a software developer</h2>
@@ -40,12 +51,12 @@
         <div class="social">
           <ul class="social-list">
             <li>
-              <a href="#" target="_blank"
+              <a href="https://twitter.com/Uz_Mnemonist" target="_blank"
                 ><img src="/images/twitter.svg" alt="Twitter"
               /></a>
             </li>
             <li>
-              <a href="#" target="_blank"
+              <a href="http://linkedin.com/in/khusniddin-ismoilov-185575157" target="_blank"
                 ><img src="/images/Linkedinicon.svg" alt="Linkedin"
               /></a>
             </li>
@@ -55,7 +66,7 @@
               /></a>
             </li>
             <li>
-              <a href="#" target="_blank"
+              <a href="https://github.com/KIsmoilov" target="_blank"
                 ><img src="/images/github.svg" alt="GitHub"
               /></a>
             </li>
@@ -67,10 +78,10 @@
           </ul>
         </div>
         <div class="scroll">
-          <img src="/images/Disabled.svg" alt="Scroll down button" />
+          <a href="#work"><img src="/images/Disabled.svg" alt="Scroll down button" /></a>
         </div>
       </section>
-      <section class="work">
+      <section id="work" class="work">
         <h2>My Recent Works</h2>
         <figure class="indicator"></figure>
         <div class="grid-container">
@@ -148,7 +159,7 @@
           </div>
         </div>
       </section>
-      <section class="about-me">
+      <section id="about-me" class="about-me">
         <div class="resume">
           <h2>About me</h2>
           <p>
@@ -199,7 +210,7 @@
           </div>
         </div>
       </section>
-      <footer class="contact-form">
+      <div id="contact" class="footer-page">
         <div class="chat">
           <h2>
             I'm always interested in hearing about new projects, so if you'd
@@ -241,6 +252,9 @@
             </li>
           </ul>
         </form>
+      </main>
+      <footer>
+        <figure class="footer-border"></figure>
         <div id="social-form" class="social">
           <ul class="social-list">
             <li>
@@ -270,10 +284,10 @@
             </li>
           </ul>
         </div>
-        <a href="husniddin.ismoilov@gmail.com" class="my-email"
+        <a href="mailto:husniddin.ismoilov@gmail.com" class="my-email"
           >husniddin.ismoilov@gmail.com</a
         >
-      </footer>
-    </main>
+      </div>
+    </footer>
   </body>
 </html>
