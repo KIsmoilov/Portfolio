@@ -44,12 +44,14 @@ body {
   .nav-bar {
     display: none;
   }
+
   #nav-hidden {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
   }
+
   .nav__list a,
   li {
     list-style: none;
@@ -75,6 +77,7 @@ body {
   .hero {
     background-image: none;
   }
+
   body {
     background-image: url(/images/background-desktop.svg);
     background-repeat: no-repeat;
@@ -98,13 +101,13 @@ h2 {
   line-height: 5.2rem;
 }
 
-.intro :last-child:hover {
-  color: #172b4d;
-}
-
 .intro :last-child {
   color: rgb(0, 170, 117);
   transition: 3s;
+}
+
+.intro :last-child:hover {
+  color: #172b4d;
 }
 
 .text {
@@ -132,15 +135,14 @@ h2 {
   animation-duration: 2s;
   animation-name: slidein;
 }
+
 @keyframes slidein {
   from {
     margin-bottom: 50%;
-    /* width: 300%; */
   }
 
   to {
     margin-top: 0%;
-    /* width: 100%; */
   }
 }
 
@@ -287,7 +289,8 @@ h2 {
   flex-direction: column;
   align-content: space-between;
   align-items: center;
-  background-image: url(/images/illustration-1.svg),
+  background-image:
+    url(/images/illustration-1.svg),
     url(/images/illustration-2.svg);
   background-position: 100% 4%, 0% 97%;
   background-repeat: no-repeat;
