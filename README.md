@@ -1,6 +1,6 @@
 # Portfolio: finish mobile version
 
-> This is the first Protfolio project. The main tasks are setting up a repository and creating all pages of the mobile version and responsive desktop version of the project using HTML and CSS. Please use the following link to access the website.
+> This is the first Protfolio project. The main tasks are setting up a repository and creating all pages of the mobile version and responsive desktop version of the project using HTML and CSS. Please use the following [link](https://kismoilov.github.io/Portfolio.github.io/) to access the website: https://kismoilov.github.io/Portfolio.github.io/ 
 
 ## Built With
 
