@@ -33,11 +33,31 @@ body {
 
 #nav-hidden {
   display: none;
+  background: #fff;
+  width: 37.5rem;
+  height: 75.5rem;
+}
+
+.nav__list a,
+li {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  color: #3a4a42;
+  padding: 2rem;
 }
 
 .menu {
   height: 2.4rem;
   width: 2.4rem;
+}
+
+.closeIcon {
+  display: none;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -50,6 +70,9 @@ body {
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
+    width: 100%;
+    height: auto;
+    background: none;
   }
 
   .nav__list a,
@@ -59,6 +82,7 @@ body {
     font-size: 1.5rem;
     line-height: 2rem;
     color: #344563;
+    padding: 0;
   }
 }
 
@@ -316,8 +340,7 @@ h2 {
   flex-direction: column;
   align-content: space-between;
   align-items: center;
-  background-image:
-    url(./images/illustration-1.svg),
+  background-image: url(./images/illustration-1.svg),
     url(./images/illustration-2.svg);
   background-position: 100% 4%, 0% 97%;
   background-repeat: no-repeat;
@@ -366,8 +389,7 @@ h2 {
 
 @media screen and (min-width: 768px) {
   .resume {
-    background-image:
-      url(./images/illustration-1-desktop.svg),
+    background-image: url(./images/illustration-1-desktop.svg),
       url(./images/illustration-2-desktop.svg);
     background-position: 100% -50%, 0% 85%;
     margin-top: 13rem;
@@ -485,8 +507,7 @@ h2 {
   }
 
   main {
-    background-image:
-      url(./images/illustration-1-contact-form-desktop.svg),
+    background-image: url(./images/illustration-1-contact-form-desktop.svg),
       url(./images/illustration-2-contact-form-desktop.svg),
       url(./images/contact-form-illustratoin-3-desktop.svg);
     background-position: 0% 100%, 20% 97%, 100% 100%;
