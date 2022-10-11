@@ -31,6 +31,17 @@ body {
   list-style: none;
 }
 
+.menu a,
+li {
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  color: #3a4a42;
+  padding: 1rem 2rem;
+}
+
 .nav-bar li {
   color: #28353f;
   font-size: 2rem;
@@ -54,17 +65,6 @@ body {
     height: 100vh;
     padding-top: 7rem;
   }
-}
-
-.menu a,
-li {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 3.2rem;
-  line-height: 4.4rem;
-  color: #3a4a42;
-  padding: 1rem 2rem;
 }
 
 .hamburger {
