@@ -18,21 +18,22 @@
       <nav class="nav-container">
         <ul class="nav-bar">
           <li>Welcome</li>
-          <li class="menu">
-            <a href="#"><img src="images/Icon-Menu.svg" alt="Menu" /></a>
-          </li>
         </ul>
-        <ul id="nav-hidden" class="nav__list">
+        <ul id="nav-hidden" class="menu">
           <li>
-            <a href="#Portfolio">Portfolio</a>
+            <a class="menuItem" href="#Portfolio">Portfolio</a>
           </li>
           <li>
-            <a href="#about-me">About</a>
+            <a class="menuItem" href="#about-me">About</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a class="menuItem" href="#contact">Contact</a>
           </li>
-        </ul>
+        </ul> 
+        <button class="hamburger">
+          <a class="menuIcon" href="#"><img src="images/Icon-Menu.svg" alt="Menu" /></a>
+          <a class="closeIcon" href="#"><img src="images/closed-icon.svg" alt="CloseIcon" /></a>
+        </button>
       </nav>
     </header>
     <main>
@@ -289,5 +290,6 @@
         >
       </div>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>

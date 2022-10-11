@@ -31,13 +31,60 @@ body {
   list-style: none;
 }
 
-#nav-hidden {
-  display: none;
+.menu a,
+li {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  color: #3a4a42;
+  padding: 1rem 2rem;
 }
 
-.menu {
+.nav-bar li {
+  color: #28353f;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  padding: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #fff;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 7rem;
+  }
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 4.3rem;
+  right: 1rem;
   height: 2.4rem;
   width: 2.4rem;
+  background: none;
+  border: none;
+}
+
+.popupMenu {
+  transform: translateY(0);
+}
+
+.closeIcon {
+  display: none;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -45,20 +92,28 @@ body {
     display: none;
   }
 
-  #nav-hidden {
+  .menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
+    width: 100%;
+    height: auto;
+    background: none;
   }
 
-  .nav__list a,
+  .menu a,
   li {
     list-style: none;
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 2rem;
     color: #344563;
+    padding: 2rem;
+  }
+
+  .hamburger {
+    display: none;
   }
 }
 
@@ -66,7 +121,7 @@ body {
   background-image: url(./images/background.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center;
+  background-position: top center;
   height: 72.6rem;
   display: flex;
   flex-direction: column;
