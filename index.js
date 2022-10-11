@@ -1,47 +1,23 @@
-// const navList = document.querySelector(".navList");
-// const menuItems = document.querySelectorAll(".menuItem");
-// const menu = document.querySelector(".menu");
-// const closeIcon = document.querySelector(".closeIcon");
-// const menuIcon = document.querySelector(".menuIcon");
-
-// function toggleMenu() {
-//   if (!navList.classList.contains("showMenu")) {
-//     navList.classList.remove("showMenu");
-//     closeIcon.style.display = "none";
-//     menuIcon.style.display = "block";
-//   } else {
-//     navList.classList.add("showMenu");
-//     closeIcon.style.display = "block";
-//     menuIcon.style.display = "none";
-//   }
-// }
-
-// menu.addEventListener("click", toggleMenu);
-
-// menuItems.forEach(function (menuItem) {
-//   menuItem.addEventListener("click", toggleMenu);
-// });
-
-const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menuItem");
-const hamburger = document.querySelector(".hamburger");
-const closeIcon = document.querySelector(".closeIcon");
-const menuIcon = document.querySelector(".menuIcon");
+const menu = document.querySelector('.menu');
+const menuItems = document.querySelectorAll('.menuItem');
+const hamburger = document.querySelector('.hamburger');
+const closeIcon = document.querySelector('.closeIcon');
+const menuIcon = document.querySelector('.menuIcon');
 
 function toggleMenu() {
-  if (menu.classList.contains("showMenu")) {
-    menu.classList.remove("showMenu");
-    closeIcon.style.display = "none";
-    menuIcon.style.display = "block";
+  if (menu.classList.contains('popupMenu')) {
+    menu.classList.remove('popupMenu');
+    closeIcon.style.display = 'none';
+    menuIcon.style.display = 'block';
   } else {
-    menu.classList.add("showMenu");
-    closeIcon.style.display = "block";
-    menuIcon.style.display = "none";
+    menu.classList.add('popupMenu');
+    closeIcon.style.display = 'block';
+    menuIcon.style.display = 'none';
   }
 }
 
-hamburger.addEventListener("click", toggleMenu);
+hamburger.addEventListener('click', toggleMenu);
 
-menuItems.forEach(function (menuItem) {
-  menuItem.addEventListener("click", toggleMenu);
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener('click', toggleMenu);
 });
