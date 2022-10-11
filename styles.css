@@ -78,20 +78,26 @@ body {
   transform: translateY(0);
 } */
 
-.menu {
-  position: fixed;
-  transform: translateY(-100%);
-  transition: transform 0.2s;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  /* display: none; */
-  background: #fff;
-  width: 100vw;
-  height: 100vh;
+
+
+@media screen and (max-width: 768px) {
+
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    /* display: none; */
+    background: #fff;
+    width: 100vw;
+    height: 100vh;
+  }
 }
+  
 
 .menu a,
 li {
@@ -107,10 +113,12 @@ li {
 .hamburger {
   position: fixed;
   z-index: 100;
-  top: 1rem;
+  top: 4.5rem;
   right: 1rem;
   height: 2.4rem;
   width: 2.4rem;
+  background: none;
+  border: none;
 }
 
 .showMenu {
@@ -145,7 +153,7 @@ li {
     font-size: 1.5rem;
     line-height: 2rem;
     color: #344563;
-    padding: 0;
+    padding: 2rem;
   }
 
   .hamburger {
