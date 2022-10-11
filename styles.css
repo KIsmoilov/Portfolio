@@ -15,6 +15,7 @@ body {
 }
 
 .nav-container {
+  /* display: flex; */
   align-items: center;
   color: #28353f;
   font-size: 2rem;
@@ -31,14 +32,68 @@ body {
   list-style: none;
 }
 
-#nav-hidden {
-  display: none;
-  background: #fff;
-  width: 37.5rem;
-  height: 75.5rem;
+/* .menuItem {
+  display: block;
+  margin: 2rem 4rem;
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
 }
 
-.nav__list a,
+.menuItem:hover {
+  text-decoration: underline;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: black solid 1px;
+  background: white;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: black;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.showMenu {
+  transform: translateY(0);
+} */
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  /* display: none; */
+  background: #fff;
+  width: 100vw;
+  height: 100vh;
+}
+
+.menu a,
 li {
   font-family: "Inter";
   font-style: normal;
@@ -49,9 +104,17 @@ li {
   padding: 2rem;
 }
 
-.menu {
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
   height: 2.4rem;
   width: 2.4rem;
+}
+
+.showMenu {
+  transform: translateY(0);
 }
 
 .closeIcon {
@@ -65,7 +128,7 @@ li {
     display: none;
   }
 
-  #nav-hidden {
+  .menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -75,7 +138,7 @@ li {
     background: none;
   }
 
-  .nav__list a,
+  .menu a,
   li {
     list-style: none;
     font-weight: 600;
@@ -83,6 +146,10 @@ li {
     line-height: 2rem;
     color: #344563;
     padding: 0;
+  }
+
+  .hamburger {
+    display: none;
   }
 }
 

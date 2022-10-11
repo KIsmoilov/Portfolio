@@ -1,19 +1,47 @@
-const menu = document.querySelector(".nav__list");
-const menuItems = document.querySelectorAll(".menu-item");
-const hamburger= document.querySelector(".menu");
-const closeIcon= document.querySelector(".closeIcon");
-const menuIcon = document.querySelector(".menu-icon");
+// const navList = document.querySelector(".navList");
+// const menuItems = document.querySelectorAll(".menuItem");
+// const menu = document.querySelector(".menu");
+// const closeIcon = document.querySelector(".closeIcon");
+// const menuIcon = document.querySelector(".menuIcon");
+
+// function toggleMenu() {
+//   if (!navList.classList.contains("showMenu")) {
+//     navList.classList.remove("showMenu");
+//     closeIcon.style.display = "none";
+//     menuIcon.style.display = "block";
+//   } else {
+//     navList.classList.add("showMenu");
+//     closeIcon.style.display = "block";
+//     menuIcon.style.display = "none";
+//   }
+// }
+
+// menu.addEventListener("click", toggleMenu);
+
+// menuItems.forEach(function (menuItem) {
+//   menuItem.addEventListener("click", toggleMenu);
+// });
+
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger = document.querySelector(".hamburger");
+const closeIcon = document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
 
 function toggleMenu() {
-  if (nav__list.classList.contains("showMenu")) {
-    nav__list.classList.remove("showMenu");
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
     closeIcon.style.display = "none";
-    menu-icon.style.display = "block";
+    menuIcon.style.display = "block";
   } else {
-    nav__list.classList.add("showMenu");
+    menu.classList.add("showMenu");
     closeIcon.style.display = "block";
-    menu-icon.style.display = "none";
+    menuIcon.style.display = "none";
   }
 }
 
-menu.addEventListener("click", toggleMenu);
+hamburger.addEventListener("click", toggleMenu);
+
+menuItems.forEach(function (menuItem) {
+  menuItem.addEventListener("click", toggleMenu);
+});
