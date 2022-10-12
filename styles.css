@@ -275,6 +275,17 @@ h2 {
   height: 47.4rem;
 }
 
+.popupSection {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
 @media screen and (min-width: 768px) {
   .work-1,
   .work-2,

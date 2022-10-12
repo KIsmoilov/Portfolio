@@ -82,7 +82,7 @@
           <a href="#work"><img src="/images/Disabled.svg" alt="Scroll down button" /></a>
         </div>
       </section>
-      <section id="work" class="work">
+      <section id="work" class="work">           
         <h2>My Recent Works</h2>
         <figure class="indicator"></figure>
         <div class="grid-container">
@@ -90,12 +90,12 @@
             <div class="project">
               <h3>Multi-Post Stories Gain+Glory</h3>
               <ul class="prog-lan">
-                <li>Ruby on rails</li>
-                <li>css</li>
-                <li>JavaScript</li>
-                <li>html</li>
+                <li class="tech">Ruby on rails</li>
+                <li class="tech">css</li>
+                <li class="tech">JavaScript</li>
+                <li class="tech">html</li>
               </ul>
-              <button type="button" class="btn">See Project</button>
+              <button id="projectOne" onclick="projectClick(event)" type="button" class="btn">See Project</button>
             </div>
           </div>
           <div class="work-2">
@@ -107,7 +107,7 @@
                 <li>JavaScript</li>
                 <li>html</li>
               </ul>
-              <button type="button" class="btn">See Project</button>
+              <button id="projectTwo" onclick="projectClick(event)" type="button" class="btn">See Project</button>
             </div>
           </div>
           <div class="work-3">
@@ -119,7 +119,7 @@
                 <li>JavaScript</li>
                 <li>html</li>
               </ul>
-              <button type="button" class="btn">See Project</button>
+              <button id="projectThree" onclick="projectClick(event)" type="button" class="btn">See Project</button>
             </div>
           </div>
           <div class="work-4">
@@ -131,7 +131,7 @@
                 <li>JavaScript</li>
                 <li>html</li>
               </ul>
-              <button type="button" class="btn">See Project</button>
+              <button id="projectFour" onclick="projectClick(event)" type="button" class="btn">See Project</button>
             </div>
           </div>
           <div class="work-5">
@@ -143,7 +143,7 @@
                 <li>JavaScript</li>
                 <li>html</li>
               </ul>
-              <button type="button" class="btn">See Project</button>
+              <button id="projectFive" onclick="projectClick(event)" type="button" class="btn">See Project</button>
             </div>
           </div>
           <div class="work-6">
@@ -155,7 +155,7 @@
                 <li>JavaScript</li>
                 <li>html</li>
               </ul>
-              <button type="button" class="btn">See Project</button>
+              <button id="projectSix" onclick="projectClick(event)" type="button" class="btn">See Project</button>
             </div>
           </div>
         </div>
@@ -290,6 +290,7 @@
         >
       </div>
     </footer>
+    <!-- <script src="./projects.js"></script> -->
     <script src="./index.js"></script>
   </body>
 </html>
