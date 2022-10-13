@@ -126,28 +126,22 @@ function projectClick(event) {
       insideContainer.appendChild(imageContainer);
 
       const closeIcon = document.createElement('button');
-      closeIcon.innerHTML = '<button onclick="closeWindow()" id="closeIcon" ><img src="images/closed-icon.svg" alt="CloseIcon"/></i></button>';
+      closeIcon.className = 'closeButton';
+      closeIcon.innerHTML = '<button onclick="closeWindow()" id="closeButton" ><img src="images/closed-icon.svg" alt="CloseIcon"/></i></button>';
       insideContainer.appendChild(closeIcon);
 
       const img = document.createElement('img');
       img.setAttribute('src', projects[i].img);
-      img.setAttribute('width','300');
-      img.setAttribute('height','220');
+      img.className = 'popupImg';
       img.setAttribute('alt','Project image');
       imageContainer.appendChild(img);
 
-      const titleContainer = document.createElement('div');
-      insideContainer.appendChild(titleContainer);
-
       const h3 = document.createElement('h3');
       h3.innerHTML = projects[i].name;
-      titleContainer.appendChild(h3);
-
-      const techContainer = document.createElement('div');
-      insideContainer.appendChild(techContainer);
+      insideContainer.appendChild(h3);
 
       const techList = document.createElement('ul');
-      techContainer.appendChild(techList);
+      insideContainer.appendChild(techList);
 
       // eslint-disable-next-line no-plusplus
       for (let j = 0; j < projects[i].tech.length; j++) {
@@ -156,12 +150,9 @@ function projectClick(event) {
         techList.appendChild(list);
       }
 
-      const popupText = document.createElement('div');
-      insideContainer.appendChild(popupText);
-
       const p = document.createElement('p');
       p.innerHTML = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea';
-      popupText.appendChild(p);
+      insideContainer.appendChild(p);
 
       const link = document.createElement('div');
       insideContainer.appendChild(link);
