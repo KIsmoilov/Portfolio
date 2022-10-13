@@ -330,6 +330,13 @@ h2 {
   line-height: 24px;
   color: #344563;
 }
+@media only screen and (min-width:768px) {
+  
+  .insideDiv {
+    width: 92rem;
+    height: 108rem;
+  }
+}
 
 .popupSection {
   background-color: #C1C7D0;
@@ -354,6 +361,24 @@ h2 {
   width: 100%;
   height: 100%;
 }
+
+@media only screen and (min-width: 768px) {
+
+  .popupImage {
+    background-image: url('./images/bg-popup.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 872px;
+    height: 616px;
+  }
+
+  .popupImg {
+    display : none;
+  }
+
+}
+  
 
 .closeButton {
   position: relative;
