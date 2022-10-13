@@ -357,7 +357,9 @@ h2 {
 
 .closeButton {
   position: relative;
-  top: -5rem;
+  float: right;
+  top: 5rem;
+  right: 4rem;
   background: none;
   border: none;
 }
