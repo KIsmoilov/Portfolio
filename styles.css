@@ -275,15 +275,31 @@ h2 {
   height: 47.4rem;
 }
 
-.popupSection {
-  background-color: red;
-  position: fixed;
+.insideDiv {
+  background-color: #fff;
+  position: absolute;
   top: 2rem;
   bottom: 2rem;
   left: 2rem;
   right: 2rem;
   width: auto;
   height: auto;
+  border: 1px solid #DFE1E6;
+  border-radius: 16px;
+  overflow: auto;
+}
+
+.popupSection {
+  background-color: #C1C7D0;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {

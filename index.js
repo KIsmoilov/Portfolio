@@ -117,13 +117,17 @@ function projectClick(event) {
       popupSection.className = 'popupSection';
       body.appendChild(popupSection);
 
+      const insideContainer = document.createElement('div');
+      insideContainer.className = 'insideDiv';
+      popupSection.appendChild(insideContainer);
+
       const imageContainer = document.createElement('div');
       imageContainer.className = 'popupImage';
-      popupSection.appendChild(imageContainer);
+      insideContainer.appendChild(imageContainer);
 
       const closeIcon = document.createElement('button');
       closeIcon.innerHTML = '<button onclick="closeWindow()" id="closeIcon" ><img src="images/closed-icon.svg" alt="CloseIcon"/></i></button>';
-      popupSection.appendChild(closeIcon);
+      insideContainer.appendChild(closeIcon);
 
       const img = document.createElement('img');
       img.setAttribute('src', projects[i].img);
@@ -133,14 +137,14 @@ function projectClick(event) {
       imageContainer.appendChild(img);
 
       const titleContainer = document.createElement('div');
-      popupSection.appendChild(titleContainer);
+      insideContainer.appendChild(titleContainer);
 
       const h3 = document.createElement('h3');
       h3.innerHTML = projects[i].name;
       titleContainer.appendChild(h3);
 
       const techContainer = document.createElement('div');
-      popupSection.appendChild(techContainer);
+      insideContainer.appendChild(techContainer);
 
       const techList = document.createElement('ul');
       techContainer.appendChild(techList);
@@ -153,14 +157,14 @@ function projectClick(event) {
       }
 
       const popupText = document.createElement('div');
-      popupSection.appendChild(popupText);
+      insideContainer.appendChild(popupText);
 
       const p = document.createElement('p');
       p.innerHTML = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea';
       popupText.appendChild(p);
 
       const link = document.createElement('div');
-      popupSection.appendChild(link);
+      insideContainer.appendChild(link);
 
       const seeLive = document.createElement('button');
       seeLive.innerHTML = '<button type="button" class="btn">See Live</button ';
