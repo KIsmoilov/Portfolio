@@ -1,13 +1,15 @@
 # Portfolio: finish mobile version
 
-> This is the first Protfolio project. The main tasks are setting up a repository and creating all pages of the mobile version and responsive desktop version of the project using HTML and CSS as well as JavaScript to make buttons functionable. Please use the following [link](https://kismoilov.github.io/Portfolio.github.io/) to access the website: https://kismoilov.github.io/Portfolio.github.io/ 
 
 ## Built With
+> This is the first Protfolio project. The main tasks are setting up a repository and creating all pages of the mobile version and responsive desktop version of the project using HTML and CSS as well as JavaScript to make buttons and popup windows functionable. 
 
 - HTML & CSS
+- JavaScript
+
 
 ## Live Demo (if available)
-
+Please use the following [link](https://kismoilov.github.io/Portfolio.github.io/) to access the website: https://kismoilov.github.io/Portfolio.github.io/ 
 ## Getting Started
 
 This is a simple project created using HTML and CSS. If you would like to use it in your projects or make a contribution to it, feel free to clone it to your code editor. Please use live server to see the visual result on internet browsers.

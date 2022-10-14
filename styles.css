@@ -67,7 +67,7 @@ li {
 }
 
 .hamburger {
-  position: fixed;
+  position: absolute;
   z-index: 100;
   top: 4.3rem;
   right: 1rem;
@@ -82,6 +82,7 @@ li {
 }
 
 .closeIcon {
+  position: fixed;
   display: none;
   width: 1.4rem;
   height: 1.4rem;
@@ -296,8 +297,8 @@ h2 {
   padding: 0.5rem 1.6rem;
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
   color: #172b4d;
   width: 80%;
 }
@@ -322,25 +323,58 @@ h2 {
   padding: 0.8rem 1.2rem;
 }
 
+.insideDiv li:nth-child(1n+4) {
+  display: none;
+}
+
 .insideDiv p {
-  padding: 1.6rem;
+  padding: 1.6rem 1.6rem 0 1.6rem;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
   color: #344563;
 }
+
 @media only screen and (min-width:768px) {
-  
   .insideDiv {
-    width: 92rem;
+    position: relative;
+    /* bottom: 10rem; */
+    max-width: 92rem;
     height: 108rem;
+    margin: 5% auto;
+    overflow: auto;
+    inset: 0;
+  }
+
+  .insideDiv h3 {
+    padding: 0.5rem 2.4rem;
+    font-weight: 700;
+    width: 70%;
+  }
+
+  .insideDiv ul {
+    column-gap: 0.8rem;
+    padding: 2.4rem;
+  }
+
+  .insideDiv li {
+    border-radius: 0.8rem;
+  }
+
+  .insideDiv li:nth-child(1n+4) {
+    display: flex;
+  }
+
+  .insideDiv p {
+    padding: 0 2.4rem;
+    line-height: 3rem;
+    margin-bottom: -5rem;
   }
 }
 
 .popupSection {
-  background-color: #C1C7D0;
-  backdrop-filter: blur(5px);
+  background: rgba(194, 199, 207, 0.9);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -362,23 +396,70 @@ h2 {
   height: 100%;
 }
 
-@media only screen and (min-width: 768px) {
+.link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1.6rem;
+}
 
+.seeLive, .seeSource {
+  background: none;
+  border: none;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .popupSection {
+    background: rgba(194, 199, 207, 0.9);
+    position: fixed;
+    /* top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    width: auto;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .link {
+    position: relative;
+    float: left;
+    top: -27%;
+    width: 37.5%;
+    justify-content: flex-end;
+    align-self: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.7rem;
+  }
+}
+
+#btnLive, #btnSource{
+  padding: 1.2rem 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  border-radius: 0.8rem;
+}
+
+@media only screen and (min-width: 768px) {
   .popupImage {
     background-image: url('./images/bg-popup.png');
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 872px;
-    height: 616px;
+    background-size: 100%;
+    border-radius: 0.8rem;
+    width: auto;
+    height: 100%;
+    margin: 7.8rem 2.4rem 1.6rem 2.4rem;
   }
 
   .popupImg {
     display : none;
   }
-
 }
-  
 
 .closeButton {
   position: relative;
@@ -392,6 +473,18 @@ h2 {
 #closeButton {
   background: none;
   border: none;
+}
+
+@media only screen and (min-width: 768px) { 
+  .closeButton {
+    position: relative;
+    float: right;
+    top: -6rem;
+    right: -1.5rem;
+    background: #C1C7D0;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
