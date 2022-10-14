@@ -1,3 +1,5 @@
+/* eslint no-unused-vars: "error" */
+
 const projects = [];
 
 const projectOne = {
@@ -100,7 +102,7 @@ function projectClick(event) {
       const img = document.createElement('img');
       img.setAttribute('src', projects[i].img);
       img.className = 'popupImg';
-      img.setAttribute('alt','Project image');
+      img.setAttribute('alt', 'Project image');
       imageContainer.appendChild(img);
 
       const h3 = document.createElement('h3');
@@ -131,7 +133,7 @@ function projectClick(event) {
       link.appendChild(seeLive);
 
       const seeSource = document.createElement('button');
-      seeSource.className = 'seeSource'
+      seeSource.className = 'seeSource';
       seeSource.innerHTML = '<button type="button" id="btnSource" class="btn">See Source <i class="fa fa-github"></i></i></button ';
       link.appendChild(seeSource);
     }
@@ -139,7 +141,7 @@ function projectClick(event) {
 }
 
 // eslint-disable-next-line no-unused-vars
-function closeWindow() { 
+function closeWindow() {
   const iconClose = document.getElementsByClassName('popupSection');
   iconClose[0].style.display = 'none';
   iconClose[0].remove();
