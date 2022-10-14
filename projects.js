@@ -72,6 +72,7 @@ const projectSix = {
 
 projects.push(projectSix);
 
+// eslint-disable-next-line no-unused-vars
 function projectClick(event) {
   const clickedId = event.target.id;
 
@@ -137,6 +138,7 @@ function projectClick(event) {
   }
 }
 
+// eslint-disable-next-line no-unused-vars
 function closeWindow() { 
   const iconClose = document.getElementsByClassName('popupSection');
   iconClose[0].style.display = 'none';

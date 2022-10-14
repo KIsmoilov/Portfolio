@@ -339,7 +339,6 @@ h2 {
 @media only screen and (min-width:768px) {
   .insideDiv {
     position: relative;
-    /* bottom: 10rem; */
     max-width: 92rem;
     height: 108rem;
     margin: 5% auto;
@@ -413,10 +412,6 @@ h2 {
   .popupSection {
     background: rgba(194, 199, 207, 0.9);
     position: fixed;
-    /* top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; */
     width: auto;
     height: 100%;
     overflow: auto;
@@ -681,6 +676,7 @@ h2 {
   list-style: none;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .skill-list li {
   font-size: 1.2rem;
   font-style: normal;
@@ -779,6 +775,7 @@ h2 {
   }
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .form li {
   display: flex;
   justify-content: center;
