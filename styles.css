@@ -827,3 +827,11 @@ h2 {
     border-radius: 0.8rem;
   }
 }
+
+.errorMsg {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #344563;
+}
