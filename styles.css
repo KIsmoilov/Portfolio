@@ -746,7 +746,8 @@ h2 {
   margin: 1.6rem;
 }
 
-.seeLive, .seeSource {
+.seeLive,
+.seeSource {
   background: none;
   border: none;
   display: flex;
@@ -774,7 +775,8 @@ h2 {
   }
 }
 
-#btnLive, #btnSource{
+#btnLive,
+#btnSource {
   padding: 1.2rem 1.6rem;
   font-style: normal;
   font-weight: 500;
