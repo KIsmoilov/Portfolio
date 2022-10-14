@@ -220,7 +220,7 @@
             like to chat please get in touch.
           </h2>
         </div>
-        <form action="https://formspree.io/f/mbjboewz" method="post">
+        <form id="submitForm" action="https://formspree.io/f/mbjboewz" method="post">
           <ul class="form">
             <li>
               <input
@@ -251,9 +251,9 @@
               ></textarea>
             </li>
             <li>
-              <button class="btn" type="submit">Get in touch</button>
+              <button id="formButton" onclick="submitForm(event)" class="btn" type="submit">Get in touch</button>
             </li>
-          </ul>
+          </ul> 
         </form>
       </main>
       <footer>
@@ -292,6 +292,7 @@
         >
       </div>
     </footer>
+    <script src="./validEmail.js"></script>
     <script src="./projects.js"></script>
     <script src="./index.js"></script>
   </body>
