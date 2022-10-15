@@ -230,6 +230,7 @@
                 placeholder="Full name"
                 maxlength="30"
                 required
+                onchange="getInputValue()"
               />
             </li>
             <li>
@@ -239,6 +240,7 @@
                 id="email"
                 placeholder="Email address"
                 required
+                onchange="getInputValue()"
               />
             </li>
             <li>
@@ -248,6 +250,7 @@
                 placeholder="Enter text here"
                 maxlength="500"
                 required
+                onchange="getInputValue()"
               ></textarea>
             </li>
             <li class="errorMsg"></li>
