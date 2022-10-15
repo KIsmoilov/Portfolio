@@ -10,7 +10,7 @@ function setToLocalStorage() {
     email: inputEmail.value,
     message: inputTextarea.value,
   };
- localStorage.setItem('submitForm', JSON.stringify(submitForm));
+  localStorage.setItem('submitForm', JSON.stringify(submitForm));
 }
 
 // eslint-disable-next-line no-unused-vars
