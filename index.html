@@ -230,6 +230,7 @@
                 placeholder="Full name"
                 maxlength="30"
                 required
+                onchange="getInputValue()"
               />
             </li>
             <li>
@@ -239,6 +240,7 @@
                 id="email"
                 placeholder="Email address"
                 required
+                onchange="getInputValue()"
               />
             </li>
             <li>
@@ -248,11 +250,12 @@
                 placeholder="Enter text here"
                 maxlength="500"
                 required
+                onchange="getInputValue()"
               ></textarea>
             </li>
             <li class="errorMsg"></li>
             <li>
-              <button id="formButton" onclick="submitForm(event)" class="btn" type="submit">Get in touch</button>
+              <button id="formButton" onclick='submitForm(event)' class="btn" type="submit">Get in touch</button>
             </li>
           </ul> 
         </form>
@@ -296,5 +299,6 @@
     <script src="./validEmail.js"></script>
     <script src="./projects.js"></script>
     <script src="./index.js"></script>
+    <script src="./localStorage.js"></script>
   </body>
 </html>

@@ -2,7 +2,7 @@
 
 
 ## Built With
-> This is the first Protfolio project. The main tasks are setting up a repository and creating all pages of the mobile version and responsive desktop version of the project using HTML and CSS as well as JavaScript to make buttons and popup windows functionable. 
+> This is the first Protfolio project. The main tasks are setting up a repository and creating all pages of the mobile version and responsive desktop version of the project using HTML and CSS as well as JavaScript to make buttons and popup windows functionable and to create local storage for the form. 
 
 - HTML & CSS
 - JavaScript
