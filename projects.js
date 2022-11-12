@@ -4,10 +4,10 @@ const projects = [];
 
 const projectOne = {
   id: 'projectOne',
-  img: './images/popupImage.jpg',
-  name: 'Keeping track of hundreds of components',
-  tech: ['Ruby on rails', 'Css', 'JavaScript', 'Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  img: './images/ProjectOne.png',
+  name: 'Memory Summit Capstone Project',
+  tech: ['HTML', 'CSS', 'JavaScript', 'GitHub'],
+  description: 'This is my first Microverse capstone project about a summit on improving memory. This project consists of four sections and a link to an about page. Some animation and transitions have been added using CSS. In addition, I created a hamburger button for the mobile version using JavaScript. The featured speakers’ section has been added dynamically in JavaScript.',
   demo: '',
   source: '',
 };
@@ -106,6 +106,7 @@ function projectClick(event) {
       imageContainer.appendChild(img);
 
       const h3 = document.createElement('h3');
+      h3.className = 'popupTitle';
       h3.innerHTML = projects[i].name;
       insideContainer.appendChild(h3);
 
@@ -120,7 +121,7 @@ function projectClick(event) {
       }
 
       const p = document.createElement('p');
-      p.innerHTML = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea';
+      p.innerHTML = projects[i].description;;
       insideContainer.appendChild(p);
 
       const link = document.createElement('div');
